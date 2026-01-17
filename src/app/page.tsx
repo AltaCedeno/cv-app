@@ -39,14 +39,14 @@ export default function Page() {
         {/* Sección Education */}
         <Section title="Education" icon={<GraduationCap className="w-6 h-6" />}>
           <EducationItem 
-            degree="Licenciatura en Informática"
-            school="Universidad de República Dominicana"
-            period="2015 - 2019"
+            degree="Bachelor's degree in computer science"
+           // school="Universidad de República Dominicana"
+           // period="2015 - 2019"
           />
           <EducationItem 
             degree="Manager and design DB SQL server"
-            school="Certificación Técnica"
             period="2020"
+            school="Universidad Autónoma de Santo Domingo"
           />
         </Section>
 
