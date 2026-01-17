@@ -35,6 +35,18 @@ export const Header = ({ name, title, email, phone, location, github }: HeaderPr
         >
           <Github size={18}/> GitHub
         </a>
+
+
+
+
+
+
+
+
+
+
+
+        
       </div>
     </div>
   </header>

@@ -2,6 +2,11 @@
 
 import React from 'react';
 // 1. Importaciones con rutas relativas corregidas
+
+import { PDFDownloadLink } from '@react-pdf/renderer';
+
+import { Download } from 'lucide-react';
+
 import { Header } from './components/Header';
 import { Section } from './components/Section';
 import { EducationItem } from './components/EducationItem';
@@ -10,7 +15,7 @@ import { SkillCategory } from './components/SkillCategory'; // Faltaba esta impo
 // 2. Iconos de lucide-react
 import { GraduationCap, Award, User } from 'lucide-react';
 
-export default function App() {
+export default function Page() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       <Header 
