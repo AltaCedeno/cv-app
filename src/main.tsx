@@ -1,12 +1,15 @@
+
+"use client"; // Necesario en Next.js si usas interactividad o hooks
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+import page from './app/page'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App />
+    <page />
   </React.StrictMode>,
 );
 
-//mi componente principal aquí App
+//mi componente principal aquí pagwe
