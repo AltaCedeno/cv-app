@@ -10,7 +10,8 @@ import { Download } from 'lucide-react';
 import { Header } from './components/Header';
 import { Section } from './components/Section';
 import { EducationItem } from './components/EducationItem';
-import { SkillCategory } from './components/SkillCategory'; // Faltaba esta importación
+import { SkillCategory } from './components/SkillCategory'; 
+
 
 // 2. Iconos de lucide-react
 import { GraduationCap, Award, User } from 'lucide-react';
@@ -39,27 +40,24 @@ export default function Page() {
         {/* Sección Education */}
         <Section title="Education" icon={<GraduationCap className="w-6 h-6" />}>
           <EducationItem 
-            degree="Licenciatura en Informática"
-            school="Universidad de República Dominicana"
-            period="2015 - 2019"
+            degree="Bachelor's degree in computer science"
+           // school="Universidad de República Dominicana"
+           // period="2015 - 2019"
           />
-          <EducationItem 
-            degree="Manager and design DB SQL server"
-            school="Certificación Técnica"
-            period="2020"
-          />
+        
+        
         </Section>
 
         {/* Sección Skills */}
         <Section title="Skills" icon={<Award className="w-6 h-6" />}>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCategory 
               category="Programming Languages"
               skills={['JavaScript', 'TypeScript']}
             />
             <SkillCategory 
               category="Frontend"
-              skills={['React', 'HTML5', 'CSS3', 'Tailwind CSS']}
+              skills={['React', 'HTML5', 'CSS3']}
             />
             <SkillCategory 
               category="Backend"
