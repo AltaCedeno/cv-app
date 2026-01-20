@@ -1,8 +1,23 @@
 import type { NextConfig } from "next";
+// @type {import('next').NextConfig} 
 
-const nextConfig: NextConfig = {
+
+//const nextConfig: NextConfig = {
   /* config options here */
-  reactCompiler: true,
+//  reactCompiler: true,
+//};
+
+//export default nextConfig;
+
+
+
+///** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // Indica que genere HTML estático
+  basePath: '/cv-alta', // Reemplaza con el nombre exacto de tu repositorio
+  images: {
+    unoptimized: true, // GitHub Pages no soporta la optimización de imágenes de Next.js
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
