@@ -7,10 +7,11 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 
 import { Download } from 'lucide-react';
 
+// Cambia tus líneas 10 a 13 por estas:
 import { Header } from './components/Header';
 import { Section } from './components/Section';
 import { EducationItem } from './components/EducationItem';
-import { SkillCategory } from './components/SkillCategory'; 
+import { SkillCategory } from './components/SkillCategory';
 
 
 // 2. Iconos de lucide-react
@@ -43,6 +44,11 @@ export default function Page() {
             degree="Bachelor's degree in computer science"
            // school="Universidad de República Dominicana"
            // period="2015 - 2019"
+          />
+          <EducationItem 
+            degree="Manager and design DB SQL server"
+         //   period="2020"
+         //   school="Universidad Autónoma de Santo Domingo"
           />
         
         
