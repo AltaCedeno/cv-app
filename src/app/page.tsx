@@ -43,6 +43,14 @@ export default function Page() {
             degree="Bachelor's degree in computer science"
            // school="Universidad de República Dominicana"
            // period="2015 - 2019"
+<<<<<<< HEAD
+=======
+          />
+          <EducationItem 
+            degree="Manager and design DB SQL server"
+            period="2020"
+            school="Universidad Autónoma de Santo Domingo"
+>>>>>>> 67ad598514f99d2e8f6e64c49c1ce3c3c3c60de0
           />
         
         
