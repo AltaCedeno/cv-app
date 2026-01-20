@@ -7,7 +7,7 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 
 import { Download } from 'lucide-react';
 
-// Cambia tus líneas 10 a 13 por estas:
+// Verifica que la carpeta sea 'components' (minúscula) y el archivo 'Header' (Mayúscula)
 import { Header } from './components/Header';
 import { Section } from './components/Section';
 import { EducationItem } from './components/EducationItem';
