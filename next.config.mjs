@@ -6,6 +6,7 @@ const nextConfig = {
   // 2. IMPORTANTE: Pon el nombre de tu repositorio de GitHub aquí
   // Si tu repo se llama "cv-app", déjalo así. Si tiene otro nombre, cámbialo.
   basePath: '/cv-app', 
+  assetPrefix: '/cv-app/', // Agrega esto también
 
   // 3. Desactiva la optimización de imágenes para exportación estática
   images: {
