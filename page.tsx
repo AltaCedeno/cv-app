@@ -8,10 +8,10 @@ import { PDFDownloadLink } from '@react-pdf/renderer';
 import { Download } from 'lucide-react';
 
 // Verifica que la carpeta sea 'components' (minúscula) y el archivo 'Header' (Mayúscula)
-import { Header } from './components/Header';
-import { Section } from './components/Section';
-import { EducationItem } from './components/EducationItem';
-import { SkillCategory } from './components/SkillCategory';
+import { Header } from '@/app/components/Header';
+import { Section } from '@/app/components/Section';
+import { EducationItem } from '@/app/components/EducationItem';
+import { SkillCategory } from '@/app/components/SkillCategory'; 
 
 
 // 2. Iconos de lucide-react
