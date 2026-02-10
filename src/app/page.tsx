@@ -32,7 +32,7 @@ export default function Page() {
         {/* Sección About Me */}
         <Section title="About Me" icon={<User className="w-6 h-6" />}>
           <p className="text-gray-700 leading-relaxed">
-            Passionate full stack developer. Manejo de bases de datos MySQL y SQL Server, 
+            Passionate full stack developer. manage data base: Postgresql, MySQL y SQL Server, MariaDB, 
             experiencia con React, Node.js, Express y tecnologías cloud.
           </p>
         </Section>
