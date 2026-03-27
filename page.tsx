@@ -1,62 +1,74 @@
-"use client"; // Necesario en Next.js si usas interactividad o hooks
-
-import React from 'react';
-// 1. Importaciones con rutas relativas corregidas
-
-import { PDFDownloadLink } from '@react-pdf/renderer';
-
-import { Download } from 'lucide-react';
-
-// Verifica que la carpeta sea 'components' (minúscula) y el archivo 'Header' (Mayúscula)
 import { Header } from '@/app/components/Header';
 import { Section } from '@/app/components/Section';
+import { ExperienceItem } from '@/app/components/ExperienceItem';
 import { EducationItem } from '@/app/components/EducationItem';
-import { SkillCategory } from '@/app/components/SkillCategory'; 
+import { SkillCategory } from '@/app/components/SkillCategory';
+// Importación corregida (asegúrate de tener instalada la librería lucide-react)
+import { Briefcase, GraduationCap, Award, User } from 'lucide-react';
 
-
-// 2. Iconos de lucide-react
-import { GraduationCap, Award, User } from 'lucide-react';
-
-export default function Page() {
+export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+   <div className="min-h-screen bg-gray-50">
       <Header 
         name="Altagracia Cedeño Sánchez"
-        title="Full Stack Developer"
-        email="codatasweb@gmail.com"
-        phone="+1 (809) 223-8213"
-        location="República Dominicana"
-        github="https://github.com/AltaCedeno"
+      title="Full Stack Developer"
+       email="codatasweb@gmail.com"
+       phone="+1 (809) 223-8213"
+       location="República Dominicana"
+       Github="https://github.com/AltaCedeno"
       />
 
       <main className="max-w-5xl mx-auto px-6 py-10">
         {/* Sección About Me */}
         <Section title="About Me" icon={<User className="w-6 h-6" />}>
           <p className="text-gray-700 leading-relaxed">
-            Passionate full stack developer. Manejo de bases de datos MySQL y SQL Server, 
+            Passionate full stack developer. Manage and designers DB MySQL and SQL Server, 
             experiencia con React, Node.js, Express y tecnologías cloud.
           </p>
         </Section>
 
-        {/* Sección Education */}
+        {/* Sección Experience - CORREGIDA */}
+        <Section title="Experience" icon={<Briefcase className="w-6 h-6" />}>
+          <ExperienceItem 
+            title="Full Stack Developer"
+            company="Digital Innovations Ltd."
+            period="Mar 2019 - Dec 2020"
+            description={[
+              "Developed and maintained e-commerce platform serving 100K+ monthly active users",
+              "Integrated payment gateways and third-party APIs",
+              "Implemented automated testing, increasing code coverage to 85%",
+              "Collaborated with UX designers"
+              
+            ]}
+          />
+          <ExperienceItem 
+            title="Junior Web Developer"
+            company="Freelance / Proyectos"
+            period="2022 - Present"
+            description={[
+              "Built responsive web applications using React",
+              "Worked with RESTful APIs and database design using MySQL"
+            ]}
+          />
+        </Section>
+
+        {/* Sección Education - CORREGIDA */}
         <Section title="Education" icon={<GraduationCap className="w-6 h-6" />}>
           <EducationItem 
-            degree="Bachelor's degree in computer science"
-           // school="Universidad de República Dominicana"
+            degree="Degree in computer science"
+            school="University in Dominicana Republic"
            // period="2015 - 2019"
           />
           <EducationItem 
             degree="Manager and design DB SQL server"
-         //   period="2020"
-         //   school="Universidad Autónoma de Santo Domingo"
+            school=" Technical Certification"
+            period="2020"
           />
-        
-        
         </Section>
 
         {/* Sección Skills */}
         <Section title="Skills" icon={<Award className="w-6 h-6" />}>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <SkillCategory 
               category="Programming Languages"
               skills={['JavaScript', 'TypeScript']}
@@ -67,7 +79,7 @@ export default function Page() {
             />
             <SkillCategory 
               category="Backend"
-              skills={['Node.js', 'Express']}
+              skills={['Node.js', 'Express', 'RESTful APIs']}
             />
             <SkillCategory 
               category="Database"
@@ -75,9 +87,10 @@ export default function Page() {
             />
             <SkillCategory 
               category="Tools"
-              skills={['VS Code', 'Git', 'GitHub', 'Vercel']}
+              skills={['VS Code', 'Git', 'GitHub', 'Verce']}
             />
           </div>
+        
         </Section>
       </main>
 
@@ -89,3 +102,4 @@ export default function Page() {
     </div>
   );
 }
+
