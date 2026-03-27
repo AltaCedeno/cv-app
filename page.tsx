@@ -75,7 +75,7 @@ export default function App() {
             />
             <SkillCategory 
               category="Frontend"
-              skills={['React', 'HTML5', 'CSS3']}
+              skills={['React', 'Next.js', 'HTML5', 'CSS3']}
             />
             <SkillCategory 
               category="Backend"
