@@ -1,9 +1,22 @@
-import { Header } from '@/app/components/Header';
-import { Section } from '@/app/components/Section';
-import { ExperienceItem } from '@/app/components/ExperienceItem';
-import { EducationItem } from '@/app/components/EducationItem';
-import { SkillCategory } from '@/app/components/SkillCategory';
+//import { Header } from '@/app/components/Header';
+//import { Section } from '@/app/components/Section';
+//import { ExperienceItem } from '@/app/components/ExperienceItem';
+//import { EducationItem } from '@/app/components/EducationItem';
+//import { SkillCategory } from '@/app/components/SkillCategory';
 // Importación corregida (asegúrate de tener instalada la librería lucide-react)
+
+import { Header } from './components/Header';
+import { Section } from './components/Section';
+import { ExperienceItem } from './components/ExperienceItem';
+import { EducationItem } from './components/EducationItem';
+import { SkillCategory } from './components/SkillCategory';
+
+
+
+
+
+
+
 import { Briefcase, GraduationCap, Award, User } from 'lucide-react';
 
 export default function App() {
